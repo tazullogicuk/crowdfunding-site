@@ -26,32 +26,31 @@ bash
 Copy code
 git clone https://github.com/yourusername/yourrepository.git
 cd yourrepository/server
+
 Install backend dependencies:
 bash
-Copy code
 npm install
+
 Create a .env file in the server directory and configure the following environment variables:
-plaintext
-Copy code
+
 MONGO_URI=<your_mongodb_connection_string>
 JWT_SECRET=<your_jwt_secret>
+
 Start the backend server:
-bash
-Copy code
+
 node index.js
 The server will run on http://localhost:5001 by default.
+
 Frontend Setup
 Navigate to the frontend directory:
-bash
-Copy code
 cd ../client
 Install frontend dependencies:
-bash
-Copy code
+
+
 npm install
 Start the frontend development server:
-bash
-Copy code
+
+
 npm run dev
 The frontend will run on http://localhost:5173 by default.
 Usage
