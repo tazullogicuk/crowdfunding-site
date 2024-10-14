@@ -20,15 +20,16 @@ Installation
 Prerequisites
 Node.js and npm installed
 MongoDB instance (local or cloud)
+
 Backend Setup
 Clone the repository and navigate to the backend directory:
-bash
-Copy code
+
+
 git clone https://github.com/yourusername/yourrepository.git
 cd yourrepository/server
 
 Install backend dependencies:
-bash
+
 npm install
 
 Create a .env file in the server directory and configure the following environment variables:
@@ -58,18 +59,21 @@ Usage
 1. Registration and Login
 Go to http://localhost:5173 and register as a new user.
 Log in with your credentials to receive an authentication token. This token is stored in localStorage.
-2. Browsing and Investing in Projects
+
+3. Browsing and Investing in Projects
 After logging in, navigate to the Business Listings page to view available projects.
 Click on a project card to view more details, including funding progress and investment options.
 Enter an investment amount and submit to contribute to the project's funding.
-3. Profile Management
+
+5. Profile Management
 Navigate to your profile page to update your personal information.
 Upload a profile image if desired, and save changes. The updated information will reflect in the database.
+
+
 Project Structure
 
-plaintext
-Copy code
-.
+
+
 ├── client                   # Frontend React application
 │   ├── public               # Public assets
 │   └── src
@@ -83,6 +87,8 @@ Copy code
     ├── middleware           # Middleware (auth.js for JWT)
     ├── uploads              # Uploaded files (profile images)
     └── index.js             # Server entry point
+
+
 API Endpoints
 
 Authentication
